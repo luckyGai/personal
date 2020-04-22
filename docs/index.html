@@ -1,11 +1,272 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>盖盖啊</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    </script>
+    <!----//webfonts---->
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+    <!----//webfonts---->
+    <script type="text/javascript">
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location
+                    .hostname == this.hostname) {
+
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
 </head>
+
 <body>
-    <h1>自我介绍</h1>
+    <div id="top" class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-icon" href="#"> <img src="images/nav-icon.png " /> </a>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">盖威</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#work">工作</a></li>
+                    <li><a href="#portfolio">生活照</a></li>
+                    <li><a href="#contact">与我联系</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!----start-slider---->
+        <!----slider-requried-files--->
+        <!----//slider-requried-files--->
+        <!---start-image-slider---->
+        <div class="slideshow">
+            <div>
+                <h1>May I introduce my self?</h1>
+                <span class="border"> </span>
+                <p>web前端工程师</p>
+            </div>
+            <div>
+                <h1>May I introduce my self?</h1>
+                <span class="border"> </span>
+                <p>web前端工程师</p>
+            </div>
+        </div>
+        <div class="go_btn">
+            <a class="button" href="#">Go Ahead</a>
+        </div>
+        <!-----start-slider-script---->
+        <script>
+            $(function () {
+                $(".slideshow > div:gt(0)").hide();
+                setInterval(function () {
+                    $('.slideshow > div:first')
+                        .fadeOut(1000)
+                        .next()
+                        .fadeIn(1000)
+                        .end()
+                        .appendTo('.slideshow');
+                }, 3000);
+
+            });
+        </script>
+        <!-----//End-slider-script---->
+    </div>
+    <!----//End-slider---->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!----//End-container---->
+    <!----//-container---->
+    <div class="about me" id="about">
+        <div class="container">
+            <div class="row content-top">
+                <div class="col-md-12  text-center">
+                    <h2>Rapgael Lechner.</h2>
+                    <p>我是盖威，盖是天王盖地虎的盖，威是威武的威。我来自内蒙古自治区巴彦淖尔市，今年26岁，我2018年毕业于内蒙古科技大学化学工程与工艺专业，我是2019年6月份来到积云教育。
+                        我在来积云之前就职于内蒙古石墨烯材料研究院，之前的工作比较稳定，但是在工作的一年时间里生活过的太安逸了，我觉得我还年轻，不想一直生活在舒适圈里边，应该多花时间去学习完善自己，所以我选择来积云，我来积云还有一个原因就是我希望积云教育可以是我从小城市走向大城市的一个翘板。
+                        我平时在工作生活中比较喜欢读书听书，还有唱歌听音乐，在周末和假期的时候我比较喜欢自驾游和制作美食。在来积云之后我又多了一个爱好，就是浏览一些关于前端知识的网站和社区，比如简书，csdn，bilibili等，在这些网站我学到了很多的知识，我相信只要我好好努力我一定也可以成为帮助别人解决bug的大神。
+                    </p </div> </div> </div> </div> <!----//-container----> <div class="work" id="work">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <div class="grid ">
+                                    <img src="images/icon1.png" alt="" />
+                                    <h3>Singing is fun</h3>
+                                    <p>比较喜欢唱歌，听音乐</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="grid ">
+                                    <img src="images/icon2.png" alt="" />
+                                    <h3>travel is fun</h3>
+                                    <p>酷爱自驾游，身体和灵魂总有一个在路上，我在实力践行这句话！</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="grid ">
+                                    <img src="images/icon3.png" alt="" />
+                                    <h3>finaly</h3>
+                                    <p>我记得爱因斯坦曾经说过：“对于一个人来说，所期望的不是别的，而仅仅是他能全力以赴和献身于一种事业。"能做自己喜欢的事业的人就是幸福的人。</p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <link rel="stylesheet" type="text/css" href="css/component.css" />
+                <script src="js/modernizr.custom.js"></script>
+                <div class="portfolio" id="portfolio">
+                    <div class="container demo-3">
+                        <ul class="col-md-12 grid cs-style-3">
+                            <li class="col-md-6">
+                                <figure>
+                                    <img class="responsive-img img1" src="images/01.JPG" alt="img03">
+                                    <figcaption>
+                                        <h4>日常自拍 </h4>
+                                        <span>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+                                    </figcaption>
+                                </figure>
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"><label
+                                        class="search-icon"> </label></a>
+                            </li>
+                            <li class="col-md-6">
+                                <figure>
+                                    <img class="responsive-img img1" src="images/pic2.png" alt="img01">
+                                    <figcaption>
+                                        <h4>Lorem ipsum dolor sit </h4>
+                                        <span>amet conseteter sadipscing elitr</span>
+                                    </figcaption>
+                                </figure>
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"><label
+                                        class="search-icon"> </label></a>
+                            </li>
+                            <li class="col-md-6">
+                                <figure>
+                                    <img class="responsive-img img1" src="images/pic3.png" alt="img02">
+                                    <figcaption>
+                                        <h4>Lorem ipsum dolor sit </h4>
+                                        <span>amet conseteter sadipscing elitr</span>
+                                    </figcaption>
+                                </figure>
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"><label
+                                        class="search-icon"> </label></a>
+                            </li>
+                            <li class="col-md-6">
+                                <figure>
+                                    <img class="responsive-img img1" src="images/pic4.png" alt="img04">
+                                    <figcaption>
+                                        <h4>Lorem ipsum dolor sit </h4>
+                                        <span>amet conseteter sadipscing elitr</span>
+                                    </figcaption>
+                                </figure>
+                                <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"><label
+                                        class="search-icon"> </label></a>
+                            </li>
+                            <li>
+                        </ul>
+                        <div class="view">
+                            <a class="view-btn" href="#">View More <span> </span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /container -->
+                <script src="js/toucheffects.js"></script>
+                <!----//End-container---->
+                <!----start-model-box---->
+                <div class="modal fade bs-example-modal-md" tabindex="-1" role="dialog"
+                    aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content light-box-info">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img
+                                    src="images/close.png" alt="" /></button>
+                            <h3>Place Yours content here</h3>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut adipiscing, sapien a
+                                ullamcorper pharetra, sem lectus faucibus ante, ac aliquam sem nisl ac lorem. Integer
+                                posuere neque sem, non egestas quam scelerisque in. Maecenas ut vestibulum justo.
+                                Suspendisse id tortor eu lorem pharetra suscipit pellentesque in sem. Fusce et urna
+                                posuere, elementum augue sed, euismod risus. Pellentesque pulvinar quam felis, rutrum
+                                blandit magna malesuada non. Aenean sapien felis, vulputate gravida elementum quis,
+                                dignissim ut libero. Quisque eget euismod augue. Aliquam nunc odio, ultricies quis
+                                tristique sit amet, mattis non justo. Nunc pharetra ut eros at ultricies.</p>
+                        </div>
+                    </div>
+                </div>
+                <!----start-model-box---->
+                <!----start-contact---->
+                <div class="contact" id="contact">
+                    <div class="container contact">
+                        <h5>Get in touch!</h5>
+                        <div class="row contact-form">
+                            <form>
+                                <div class="col-md-6 text-box">
+                                    <input type="text" placeholder="Name" />
+                                </div>
+                                <div class="col-md-6 text-box ">
+                                    <input type="text" placeholder="Email" />
+                                </div>
+                                <div class="col-md-12 textarea">
+                                    <textarea>How can I help you?</textarea>
+                                </div>
+                                <input class="con-button " type="submit" value="Send" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!----//End-contact---->
+                <div class="footer">
+                    <div class="container">
+                        <div class="row social-icons">
+                            <div class="col-xs-4 text-center">
+                                <a href="#"><img class="responsive-img" src="images/footr-twb.png" alt="" /></a>
+                            </div>
+                            <div class="col-xs-4 text-center">
+                                <a href="#"><img class="responsive-img" src="images/footr-dbl.png" alt="" /> </a>
+
+                            </div>
+                            <div class="col-xs-4 text-center">
+                                <a href="#"><img class="responsive-img" src="images/footr-fb.png" alt="" /> </a>
+                            </div>
+                        </div>
+                        <div class="row copy-right">
+                            <div class="col-md-12 text-center">
+                                <p>Copyright &copy; 2014.Company name All rights reserved.<a target="_blank"
+                                        href="http://www.freemoban.com/">www.freemoban.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#top" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+
 </body>
+
 </html>
